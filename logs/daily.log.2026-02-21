@@ -1,0 +1,80 @@
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:141] - ================================================================================
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:142] - 🚀 Logging system initialized
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:143] - 📁 Log directory: C:\Users\Mr_Moon\Documents\mybot\logs
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:144] - 📊 Console level: WARNING
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:145] - 📊 File level: DEBUG
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:146] - 📦 Max file size: 10.0 MB
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:147] - 💾 Backup count: 5
+2026-02-21 23:34:52 - root - INFO - [logging_config.py:148] - ================================================================================
+2026-02-21 23:34:52 - __main__ - INFO - [main.py:41] - 🚀 Bot starting...
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:141] - ================================================================================
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:142] - 🚀 Logging system initialized
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:143] - 📁 Log directory: C:\Users\Mr_Moon\Documents\mybot\logs
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:144] - 📊 Console level: WARNING
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:145] - 📊 File level: DEBUG
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:146] - 📦 Max file size: 10.0 MB
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:147] - 💾 Backup count: 5
+2026-02-21 23:42:52 - root - INFO - [logging_config.py:148] - ================================================================================
+2026-02-21 23:42:52 - __main__ - INFO - [main.py:42] - 🚀 Bot starting...
+2026-02-21 23:42:52 - services.rate_limiter - INFO - [rate_limiter.py:84] - 🛡️ Rate limiter initialized: 20 requests per 60s
+2026-02-21 23:42:52 - __main__ - INFO - [main.py:90] - 🛡️ Rate limiter initialized
+2026-02-21 23:42:52 - __main__ - INFO - [main.py:102] - 🛡️ Rate limiting middleware registered
+2026-02-21 23:42:52 - __main__ - INFO - [main.py:117] - Admins loaded from admins.json
+2026-02-21 23:42:52 - services.google_sheet - INFO - [google_sheet.py:488] - Loading all sheets into cache...
+2026-02-21 23:42:52 - services.google_sheet - INFO - [google_sheet.py:1078] - Successfully connected to Google Sheets
+2026-02-21 23:42:55 - services.google_sheet - INFO - [google_sheet.py:494] - Loaded 860 records from sheets1
+2026-02-21 23:42:55 - services.google_sheet - INFO - [google_sheet.py:506] - Created collection index with 15 collections
+2026-02-21 23:42:56 - services.google_sheet - INFO - [google_sheet.py:197] - Sheets2 loaded once: 998 records with all fields
+2026-02-21 23:42:56 - services.google_sheet - INFO - [google_sheet.py:511] - Sheets2 loaded once: 998 records with all fields
+2026-02-21 23:42:57 - services.google_sheet - INFO - [google_sheet.py:543] - Loaded 368 records from sheets3
+2026-02-21 23:42:58 - services.google_sheet - INFO - [google_sheet.py:547] - Loaded 233 records from sheets4
+2026-02-21 23:42:58 - services.google_sheet - INFO - [google_sheet.py:573] - Added 5 image URLs from sheets4 to image_map
+2026-02-21 23:42:59 - services.google_sheet - INFO - [google_sheet.py:577] - Loaded 98 records from sheets5
+2026-02-21 23:43:00 - services.google_sheet - INFO - [google_sheet.py:581] - Loaded 52 records from sheets6
+2026-02-21 23:43:00 - services.google_sheet - INFO - [google_sheet.py:607] - Added 0 image URLs from sheets5 to image_map
+2026-02-21 23:43:00 - services.google_sheet - INFO - [google_sheet.py:619] - Created image map: 978 entries (sheets2: 998, sheets4: +5, sheets5: +0)
+2026-02-21 23:43:00 - services.google_sheet - INFO - [google_sheet.py:621] - ✅ All sheets loaded into cache successfully
+2026-02-21 23:43:00 - __main__ - INFO - [main.py:124] - All sheets loaded into cache
+2026-02-21 23:43:00 - __main__ - INFO - [main.py:133] - 🧹 Cart cleanup task started (runs every 1 hour)
+2026-02-21 23:43:00 - __main__ - INFO - [main.py:138] - 🔄 Cache reload task started (runs every 1 hour)
+2026-02-21 23:43:00 - __main__ - INFO - [main.py:143] - 🛡️ Rate limiter cleanup task started (runs every 5 minutes)
+2026-02-21 23:43:00 - __main__ - INFO - [main.py:150] - Bot is starting...
+2026-02-21 23:43:00 - services.rate_limiter - INFO - [rate_limiter.py:326] - 🧹 Rate limiter cleanup task started (interval: 300s)
+2026-02-21 23:50:01 - aiogram.dispatcher - [31mERROR[0m - [dispatcher.py:225] - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-21 23:50:01 - aiogram.dispatcher - [33mWARNING[0m - [dispatcher.py:227] - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7882114378)
+2026-02-21 23:50:01 - services.rate_limiter - INFO - [rate_limiter.py:333] - Rate limiter cleanup task cancelled
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:141] - ================================================================================
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:142] - 🚀 Logging system initialized
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:143] - 📁 Log directory: C:\Users\Mr_Moon\Documents\mybot\logs
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:144] - 📊 Console level: WARNING
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:145] - 📊 File level: DEBUG
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:146] - 📦 Max file size: 10.0 MB
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:147] - 💾 Backup count: 5
+2026-02-21 23:50:04 - root - INFO - [logging_config.py:148] - ================================================================================
+2026-02-21 23:50:04 - __main__ - INFO - [main.py:42] - 🚀 Bot starting...
+2026-02-21 23:50:04 - services.rate_limiter - INFO - [rate_limiter.py:84] - 🛡️ Rate limiter initialized: 20 requests per 60s
+2026-02-21 23:50:04 - __main__ - INFO - [main.py:90] - 🛡️ Rate limiter initialized
+2026-02-21 23:50:04 - __main__ - INFO - [main.py:102] - 🛡️ Rate limiting middleware registered
+2026-02-21 23:50:04 - __main__ - INFO - [main.py:117] - Admins loaded from admins.json
+2026-02-21 23:50:04 - services.google_sheet - INFO - [google_sheet.py:488] - Loading all sheets into cache...
+2026-02-21 23:50:04 - services.google_sheet - INFO - [google_sheet.py:1078] - Successfully connected to Google Sheets
+2026-02-21 23:50:07 - services.google_sheet - INFO - [google_sheet.py:494] - Loaded 860 records from sheets1
+2026-02-21 23:50:07 - services.google_sheet - INFO - [google_sheet.py:506] - Created collection index with 15 collections
+2026-02-21 23:50:08 - services.google_sheet - INFO - [google_sheet.py:197] - Sheets2 loaded once: 998 records with all fields
+2026-02-21 23:50:08 - services.google_sheet - INFO - [google_sheet.py:511] - Sheets2 loaded once: 998 records with all fields
+2026-02-21 23:50:09 - services.google_sheet - INFO - [google_sheet.py:543] - Loaded 368 records from sheets3
+2026-02-21 23:50:10 - services.google_sheet - INFO - [google_sheet.py:547] - Loaded 233 records from sheets4
+2026-02-21 23:50:10 - services.google_sheet - INFO - [google_sheet.py:573] - Added 5 image URLs from sheets4 to image_map
+2026-02-21 23:50:11 - services.google_sheet - INFO - [google_sheet.py:577] - Loaded 98 records from sheets5
+2026-02-21 23:50:12 - services.google_sheet - INFO - [google_sheet.py:581] - Loaded 52 records from sheets6
+2026-02-21 23:50:12 - services.google_sheet - INFO - [google_sheet.py:607] - Added 0 image URLs from sheets5 to image_map
+2026-02-21 23:50:12 - services.google_sheet - INFO - [google_sheet.py:619] - Created image map: 978 entries (sheets2: 998, sheets4: +5, sheets5: +0)
+2026-02-21 23:50:12 - services.google_sheet - INFO - [google_sheet.py:621] - ✅ All sheets loaded into cache successfully
+2026-02-21 23:50:12 - __main__ - INFO - [main.py:124] - All sheets loaded into cache
+2026-02-21 23:50:12 - __main__ - INFO - [main.py:133] - 🧹 Cart cleanup task started (runs every 1 hour)
+2026-02-21 23:50:12 - __main__ - INFO - [main.py:138] - 🔄 Cache reload task started (runs every 1 hour)
+2026-02-21 23:50:12 - __main__ - INFO - [main.py:143] - 🛡️ Rate limiter cleanup task started (runs every 5 minutes)
+2026-02-21 23:50:12 - __main__ - INFO - [main.py:150] - Bot is starting...
+2026-02-21 23:50:12 - services.rate_limiter - INFO - [rate_limiter.py:326] - 🧹 Rate limiter cleanup task started (interval: 300s)
+2026-02-21 23:51:26 - services.rate_limiter - [33mWARNING[0m - [rate_limiter.py:155] - 🚫 User 6964589225 rate limit exceeded: 20 requests in 60s (blocked for 300s)
+2026-02-21 23:55:12 - services.rate_limiter - INFO - [rate_limiter.py:223] - 🧹 Cleaned up: 0 expired blocks, 1 inactive users
