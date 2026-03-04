@@ -30,6 +30,25 @@ CACHE: Dict[str, any] = {
 
 # ==================== CACHE MANAGEMENT FUNCTIONS ====================
 
+def _rebuild_collection_index_from_sheets1() -> None:
+    """
+    Rebuild collection_index from CACHE["sheets1"].
+
+    Astatka "Kolleksiya bo'yicha bilish" reads from this index, so it must be
+    refreshed every time sheets1 is reloaded.
+    """
+    collection_index: Dict[str, List[Dict]] = {}
+    for product in CACHE.get("sheets1", []):
+        coll = str(product.get("collection", "")).strip()
+        if not coll:
+            continue
+        if coll not in collection_index:
+            collection_index[coll] = []
+        collection_index[coll].append(product)
+
+    CACHE["collection_index"] = collection_index
+    logger.info(f"Created collection index with {len(collection_index)} collections")
+
 async def _load_sheets1_direct(sheet_service: 'GoogleSheetService') -> List[Dict]:
     """Load sheets1 directly from Google Sheets (without cache check)"""
     await sheet_service._ensure_client()
@@ -494,16 +513,7 @@ async def load_all_sheets_to_cache():
         logger.info(f"Loaded {len(CACHE['sheets1'])} records from sheets1")
         
         # Build collection index for fast lookups
-        collection_index = {}
-        for product in CACHE["sheets1"]:
-            coll = product.get("collection", "").strip()
-            if coll:
-                if coll not in collection_index:
-                    collection_index[coll] = []
-                collection_index[coll].append(product)
-        
-        CACHE["collection_index"] = collection_index
-        logger.info(f"Created collection index with {len(collection_index)} collections")
+        _rebuild_collection_index_from_sheets1()
         
         # Load sheets2 ONCE with all fields
         sheets2_full = await _load_sheets2_full_direct(sheet_service)
@@ -630,6 +640,7 @@ async def load_sheets1_to_cache():
     sheet_service = GoogleSheetService()
     try:
         CACHE["sheets1"] = await _load_sheets1_direct(sheet_service)
+        _rebuild_collection_index_from_sheets1()
         logger.info(f"✅ Sheets1 loaded: {len(CACHE['sheets1'])} records")
     except Exception as e:
         logger.error(f"Error loading sheets1: {e}")
